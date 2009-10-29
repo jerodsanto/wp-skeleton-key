@@ -10,13 +10,22 @@ Gives administrators a skeleton key (their own password) to login as any user th
 
 == Description ==
 
-As an administrator of a WordPress site with many users, it is often useful to login to a user's account to troubleshoot something. Asking for their password is tacky and having to reset it is amateurish. Thankfully, you don't have to do either when you're armed with this plugin. You can login to the site with any user's account by providing their username and your administrative password. All other user authentication is passed on to WordPress core. Handy, huh?
+As an administrator of a WordPress site with many users, it is often useful to login to a user's account to troubleshoot something. Asking for their password is tacky and having to reset it is amateurish. Thankfully, you don't have to do either when you're armed with this plugin. You can login to the site with any user's account by providing admin username followed by a "+" followed by their username and your administrative password. All other user authentication is passed on to WordPress core. Handy, huh?
+
+To login as user joeblow you'd provide:
+
+    Username = admin+joeblow
+    Password = [the admin's password]
+
+= New In This Version =
+
+1.  Now requires admins to provide their own login + user login to use the skeleton key
 
 == Installation ==
 
 1.  Upload wp-skeleton-key/ directory to the wp-content/plugins directory.
 2.  Activate 'Skeleton Key' through the 'Plugins' menu in WordPress.
-3.  Login as any user with administrator's password!
+3.  Login as any user with admin+user login and the administrator's password!
 
 == Frequently Asked Questions ==
 
@@ -34,9 +43,15 @@ Issue tracking is also on [GitHub]( http://github.com/sant0sk1/wp-skeleton-key/i
 
 == Changelog ==
 
+= 1.1 =
+* Require admin+user to authenticate now. Secret-handshake-stylee.
+
 = 1.0.1 =
 * Optimized queries to make only one call to the database to retrieve and test admin logins
 * Fixed links in Readme.txt file so closing parenthesis was not appended to the URL
 
 = 1.0 =
 * Initial release
+
+== Contributors ==
+* [Doug Neiner]( http://pixelgraphics.us/ )
