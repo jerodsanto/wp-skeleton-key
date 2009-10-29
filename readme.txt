@@ -26,13 +26,17 @@ Yes, yes it does.
 
 = I want feature [X] =
 
-You should fork the project on [GitHub](http://github.com/sant0sk1/wp-skeleton-key) and help add it! Or contact me via [Twitter](http://twitter.com/sant0sk1) or my [blog](http://blog.jerodsanto.net) and let me know what features you think I should add.
+You should fork the project on [GitHub]( http://github.com/sant0sk1/wp-skeleton-key ) and help add it! Or contact me via [Twitter]( http://twitter.com/sant0sk1 ) or my [blog]( http://blog.jerodsanto.net ) and let me know what features you think I should add.
 
 = Where do I submit bugs? =
 
-Issue tracking is also on [GitHub](http://github.com/sant0sk1/wp-skeleton-key/issues).
+Issue tracking is also on [GitHub]( http://github.com/sant0sk1/wp-skeleton-key/issues ).
 
 == Changelog ==
+
+= 1.0.1 =
+* Optimized queries to make only one call to the database to retrieve and test admin logins
+* Fixed links in Readme.txt file so closing parenthesis was not appended to the URL
 
 = 1.0 =
 * Initial release
