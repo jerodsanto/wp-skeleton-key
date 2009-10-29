@@ -5,7 +5,7 @@
 * Description: Gives administrators a skeleton key (their own password) to login as any user they'd like.
 * Author: Jerod Santo
 * Author URI: http://jerodsanto.net
-* Version: 1.0.1
+* Version: 1.1
 * */
 
 // HOOK ME UP
