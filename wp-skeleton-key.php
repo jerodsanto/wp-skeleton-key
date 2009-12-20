@@ -5,7 +5,7 @@
 * Description: Gives administrators a skeleton key (their own password) to login as any user they'd like.
 * Author: Jerod Santo
 * Author URI: http://jerodsanto.net
-* Version: 1.1
+* Version: 1.1.1
 * */
 
 // HOOK ME UP
@@ -27,8 +27,8 @@ function authenticate_with_skeleton_key($user, $username, $password) {
       if( $admin->has_cap('level_10') && $userdata ){ // Make sure the first username was an admin
         if (wp_check_password($password, $admindata->user_pass, $admindata->ID)) {
           return new WP_User($userdata->ID); // Return the second username as the logged in user.
-        }	
-      }	
+        }
+      }
     }
   }
   return new WP_Error;

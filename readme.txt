@@ -3,7 +3,7 @@ Contributors: sant0sk1
 Donate link: http://jerodsanto.net
 Tags: admin, login, users, password, skeleton, key, manage, masquerade
 Requires at least: 2.8
-Tested up to: 2.8.5
+Tested up to: 2.9
 Stable tag: trunk
 
 Gives administrators a skeleton key (their own password) to login as any user they'd like.
@@ -19,7 +19,7 @@ To login as user joeblow you'd provide:
 
 = New In This Version =
 
-1.  Now requires admins to provide their own login + user login to use the skeleton key
+1.  WordPress 2.9 compatibility
 
 == Installation ==
 
@@ -42,6 +42,9 @@ You should fork the project on [GitHub]( http://github.com/sant0sk1/wp-skeleton-
 Issue tracking is also on [GitHub]( http://github.com/sant0sk1/wp-skeleton-key/issues ).
 
 == Changelog ==
+
+= 1.1.1 =
+* WordPress 2.9 compatibility
 
 = 1.1 =
 * Require admin+user to authenticate now. Secret-handshake-stylee.
